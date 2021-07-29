@@ -1,0 +1,291 @@
+const nome = 'Victor'
+const idade = 26
+const sexo = 'Masculino'
+
+console.log(`Eu me chamo ${nome} tenho ${idade} e sou do sexo ${sexo}.`)
+
+----------------------------------------------------------------------------------------------
+
+//Criar um programa que calcula a média
+//das notas entre os alunos e envia
+// mensagem do calculo da média
+
+const nome = 'Victor'
+const nome1 = 'Caio'
+const nome2=  `Valber e ${nome1}`
+
+
+console.log(nome2)
+
+OBS: nome2 - TEMPLATE STRING posso colocar variaveis dentro = `Valber e ${nome1}`
+
+----------------------------------------------------------------------------------------------
+CALCULO DA MEDIA
+
+const aluno1 = 'Victor'
+const aluno2 = 'Caio'
+const aluno3 =  'Valber'
+
+const notaAluno1 = 8.9
+const notaAluno2 = 9.2
+const notaAluno3 = 10
+
+const media = (notaAluno1 + notaAluno2 + notaAluno3) / 3
+
+console.log(media)
+
+----------------------------------------------------------------------------------------------
+//Criar um programa que calcula a média
+//das notas entre os alunos e envia
+// mensagem do calculo da média
+//se a media for maior que 5, parabenize a turma
+
+const aluno1 = 'Victor'
+const notaAluno2 = 9.2
+
+const aluno2 = 'Caio'
+const notaAluno1 = 8.9
+
+const aluno3 =  'Valber'
+const notaAluno3 = 10
+
+
+const media = (notaAluno1 + notaAluno2 + notaAluno3) / 3
+
+// console.log(media)
+
+//condicionar
+
+if (media > 5) {
+    console.log (`A media foi de ${media}. Parabéns`) 
+} 
+else {
+    console.log('A média é menor que 5')
+}
+
+----------------------------------------------------------------------------------------------
+Desafio:
+// Verificar se a pessoa é maior igual a 18 anos
+// se sim, deixar entrar, se nao, bloquear entrada
+// se a pessoa tiver 17 anos
+// avisar para voltar quando fizer 18
+
+const idade = 15
+
+// console.log(idade >= 18)
+
+if (idade >= 18 ){
+    console.log( 'Deixe entrar')
+}
+else {
+    console.log('Não deixe entrar')
+}
+
+if (idade === 17 ) {
+    console.log('Volte quando tiver 18 anos')
+}
+
+
+----------------------------------------------------------------------------------------------
+const nome = "Carlos";
+const peso = 84;
+const altura = 1.88;
+
+
+const IMC = (peso / (altura * altura));
+console.log(IMC)
+
+if (IMC >= 30) {
+    console.log(`${nome} voce está acima do peso.`)
+} 
+else if (IMC <= 29.99) {
+    console.log(`${nome} voce não está acima do peso.`)
+}
+
+----------------------------------------------------------------------------------------------
+OBJETO
+
+const aluno = {
+    nome: 'Victor',
+    nota: 9.8
+}
+const aluno1 = {
+    nome: 'Valber',
+    nota: 5.8
+}
+const aluno2 = {
+    nome: 'Eu',
+    nota: 7.2
+}
+
+const media = (aluno.nota + aluno1.nota + aluno2.nota )
+
+console.log(media)
+
+----------------------------------------------------------------------------------------------
+VETORES / ARRAY
+
+const alunos = [
+	{
+		nome: "Victor",
+		nota: 9.2
+	},
+	{
+		nome: "Victor",
+		nota: 7.7
+	},
+	{
+		nome: "Eu",
+		nota: 6.6
+	},
+	
+]
+const media = (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+
+console.log(media)
+
+OU 
+
+const nomedealunos = ["Victor", "Vaber", "Eu"]
+
+console.log(nomedealunos)
+
+
+----------------------------------------------------------------------------------------------
+FUNÇÕES OU METODOS;
+
+// Criar um programa que calcule a media
+// das turmas de alunos e envia
+// mensagem do calculo da media 
+
+const alunosSerieA = [
+	{
+		nome: "Victor",
+		nota: 10
+	},
+	{
+		nome: "Valber",
+		nota: 4.7
+	},
+	{
+		nome: "Maria",
+		nota: 8.6
+	},
+	
+]
+
+const alunosSerieB = [
+	{
+		nome: "Joãor",
+		nota: 9.2
+	},
+	{
+		nome: "Maria",
+		nota: 0.7
+	},
+	{
+		nome: "Alves",
+		nota: 0.6
+	},
+	
+]
+
+function calculaMedia(alunos) {
+	return (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+
+}
+
+const media1 = calculaMedia(alunosSerieA)
+const media2 = calculaMedia(alunosSerieB)
+
+function enviarMensagem(media, turma){
+	if (media > 5 ) {
+	  console.log(`A media da turma ${turma} foi de ${media}. Parabéns`)
+	} else {
+	  console.log(`A média da turma ${turma} é menor que 5`)
+	}
+}
+
+	enviarMensagem(media1, 'turmaA')
+	enviarMensagem(media2, 'turmaB')
+	
+---------------------------------------------------------------------------------------------
+---->>>>>>>>>>>Estrutura de repetição<<<<<<<<<<<----
+
+
+
+//Criar um programa que calcule a média 
+//das turmas de alunos e envie 
+//uma mensagem do calculo da mpedia
+
+
+const alunosDaTurmaA = [
+{
+  nome: "Victor",
+  nota: 1.8
+},  
+{
+  nome: "Diego",
+  nota: 10
+},
+{
+  nome: "Marcos",
+  nota: 2
+},    
+{
+  nome: "dado",
+  nota: 10
+}   
+]
+
+const alunosDaTurmaB = [
+{
+   nome: "Carlos",
+   nota: 10
+},  
+{
+  nome: "Pedro",
+  nota: 10
+},
+{
+  nome: "Ziro",
+  nota: 10
+},
+{
+  nome: "Novato",
+  nota: 1
+}
+]
+
+
+function CalculoMedia(alunos) {
+  //for (let /*permite que mude o valor de*/ i = 0; i < alunos.length; i++) {
+    // console.log(i);
+let soma = 0
+for (let i = 0; i < alunos.length; i++) { 
+  soma = soma + alunos[i].nota  
+}
+  }
+
+
+const media1 = CalculoMedia(alunosDaTurmaA)
+const media2 = CalculoMedia(alunosDaTurmaB)
+
+
+
+function enviarMensagem(media, turma){
+if (media > 5 ) {
+  console.log(`A media da turma ${turma} foi de ${media}. Parabéns`)
+} else {
+  console.log(`A média da turma ${turma} é menor que 5`)
+}
+}
+
+enviarMensagem(media1, 'turmaA')
+enviarMensagem(media2, 'TurmaB')  
+
+//const media = (alunos[0].nota + alunos[1].nota + alunos[2].nota) / 3
+
+
+
+
